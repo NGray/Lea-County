@@ -1,0 +1,37 @@
+/*small screen devices, like phones, hand held devices portrait mode
+----------------------------------------*/
+@media screen and (max-width: 320px) {
+	#nav-right {
+		display:none;
+	}	
+	
+		#nav {
+		margin:0!important;	
+		}
+}
+/* small screen devices, like phones in landscape mode
+------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+	
+}
+/* smaller tablets, like Amazons Kindle (600 x 800) and Barnes and Nobles Nook  (600 * 1024),portrait mode
+--------------------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+	
+}
+/* ten-inch tablets like the iPad (768x1024) in portrait mode 
+----------------------------------------------------------*/
+@media screen and (max-width:768px) {
+	
+}
+/* tablets like the iPad (1024x768px) in landscape mode, as well as smaller laptops
+-------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+	
+}
+
+/* for widescreen displays, like laptop and desktop browsers
+-----------------------------------------------------------*/
+@media screen and (max-width:1200px) {
+		
+}

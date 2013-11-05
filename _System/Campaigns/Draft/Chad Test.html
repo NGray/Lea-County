@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Email Newsletter</title>
+        <style type="text/css">
+            /* Client-specific Styles*/
+            * {
+            margin:0;
+            padding:0;
+            }
+            #outlook a {
+            padding:0; /* Force Outlook to provide a "view in browser" button.*/
+            text-decoration:none;
+            }
+            body {
+            background:#ffffff;
+            width:100% !important;
+            margin:0;
+            padding:0;
+            }
+            .ReadMsgBody {
+            width:100%;
+            }
+            .ExternalClass {
+            width:100%; /* Force Hotmail to display emails at full width*/
+            }
+            body {
+            -webkit-text-size-adjust:none; /* Prevent Webkit platforms from changing default text sizes.*/
+            }
+            body {
+            font-family:Helvetica, sans-serif;
+            font-size:12px;
+            margin:0;
+            padding:0;
+            }
+            img {
+            border:0;
+            height:auto;
+            line-height:100%;
+            outline:none;
+            text-decoration:none;
+            }
+            table td {
+            border-collapse:collapse;
+            }
+            #backgroundTable {
+            height:100% !important;
+            margin:0;
+            padding:0;
+            width:100% !important;
+            }
+            #templateContainer {
+            border: 0px none;
+            }
+            h1, .h1 {
+            display:block;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:18px;
+            font-weight:bold;
+            line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            text-align:left;
+            }
+            h2, .h2 {
+            color:#2f2f2f;
+            display:block;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:14px;
+            font-weight:normal;
+            line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            text-align:left;
+            }
+            h3, .h3 {
+            color:#202020;
+            display:block;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:14px;
+            font-weight:bold;
+            line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            text-align:left;
+            }
+            h4, .h4 {
+            color:#111111 !important;
+            display:block;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:14px;
+            font-weight:bold;
+            line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:0px;
+            margin-left:0;
+            text-align:left;
+            }
+            .preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override*/ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override*/ {
+            color:#336699;
+            font-weight:normal;
+            text-decoration:none;
+            }
+            #templateHeader {
+            background:url('http://scoreatthetopsite.hotpressplatform.com/_photos/email/bg-featured.png');
+            background-color:#f1f1f1;
+            border-bottom:0;
+            height:298px;
+            width:600px;
+            }
+            .headerContent {
+            color:#202020;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:34px;
+            font-weight:bold;
+            line-height:100%;
+            padding:0;
+            text-align:center;
+            vertical-align:middle;
+            }
+            .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override*/ .headerContent a .yshortcuts /* Yahoo! Mail Override*/ {
+            color:#336699;
+            font-weight:normal;
+            text-decoration:none;
+            }
+            #headerImage {
+            height:auto;
+            max-width:600px;
+            }
+            #templateContainer, .bodyContent {
+            background-color:#FFFFFF;
+            }
+            .bodyContent div {
+            color:#505050;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:14px;
+            line-height:150%;
+            text-align:left;
+            }
+            .bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override*/ .bodyContent div a .yshortcuts /* Yahoo! Mail Override*/ {
+            color:#336699;
+            font-weight:normal;
+            text-decoration:none;
+            }
+            .bodyContent img {
+            display:inline;
+            height:auto;
+            }
+            #templateSidebar {
+            background-color:#FFFFFF;
+            border-right:0;
+            }
+            .sidebarContent div {
+            color:#505050;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:12px;
+            line-height:150%;
+            text-align:left;
+            }
+            .sidebarContent div a:link, .sidebarContent div a:visited, /* Yahoo! Mail Override*/ .sidebarContent div a .yshortcuts /* Yahoo! Mail Override*/ {
+            color:#336699;
+            font-weight:normal;
+            text-decoration:none;
+            }
+            .sidebarContent img {
+            display:inline;
+            height:auto;
+            }
+            #templateFooter {
+            background-color:#FFFFFF;
+            border-top:0;
+            }
+            .footerContent div {
+            color:#707070;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:12px;
+            line-height:125%;
+            text-align:left;
+            }
+            .footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override*/ .footerContent div a .yshortcuts /* Yahoo! Mail Override*/ {
+            color:#336699;
+            font-weight:normal;
+            text-decoration:none;
+            }
+            .footerContent img {
+            display:inline;
+            }
+            #social {
+            background-color:#FAFAFA;
+            border:0;
+            }
+            #social div {
+            text-align:center;
+            }
+            #utility {
+            background-color:#FFFFFF;
+            border:0;
+            }
+            #utility div {
+            text-align:center;
+            }
+            #monkeyRewards img {
+            max-width:190px;
+            }
+            a {
+            text-decoration:none;
+            }
+            hr {
+            border:0;
+            border-top:0px solid #cbcbcb;
+            border-bottom:1px solid #cbcbcb;
+            height:0;
+            }
+        </style>
+    </head>
+    <body topmargin="0" leftmargin="0" style="margin: 0px; background-color: rgb(255, 255, 255); font-family: Helvetica,sans-serif; padding: 0pt;" marginheight="0" marginwidth="0" bgcolor="#ffffff">
+        <center>
+        <table id="backgroundTable" height="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td valign="top" align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 11px; font-family: Arial,Helvetica,sans-serif; color: rgb(17, 17, 17); padding-top: 10px; padding-bottom: 10px; text-align: center;" valign="middle"> If this email looks strange try and enable images in your email program or <span style="color: rgb(72, 107, 171);">{tag_viewinbrowser}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table id="templatePreheader" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td class="preheaderContent" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top"><a href="http://www.scoreatthetop.com" style="border: medium none;"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/logo.jpg" alt="Score at the Top" align="left"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end templatePreheader -->
+                    <table id="templateContainer" style="border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="center">
+                                <table id="templateBody" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                            <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        <table bgcolor="#ffffff" border="0" cellpadding="15" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                    <div>
+                                                                    <h1 class="h1" style="color: rgb(0, 174, 218); font-size: 18px;">Active Archive Field Trip to Colorado's Own Spectra Logic</h1>
+                                                                    <h2 class="h2" style="color: rgb(56, 5, 96) ! important; font-size: 14px;">Thursday, December 8, 2011</h2>
+                                                                    <p>Join us for Lunch, a Tour of the Manufacturing &amp; Design Center, and Learn about Spectra's Role in the Active Archive Alliance.</p>
+                                                                    <hr style="border-right: 0pt none; border-left: 0pt none; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; border-width: 0px 0pt 1px; border-style: solid none; border-color: rgb(203, 203, 203) -moz-use-text-color; height: 0pt; margin-bottom: 15px;">
+                                                                    <h1 class="h1" style="color: rgb(0, 174, 218); font-size: 18px;">Active Archive Field Trip to Colorado's Own Spectra Logic</h1>
+                                                                    <h2 class="h2" style="color: rgb(56, 5, 96) ! important; font-size: 14px;">Thursday, December 8, 2011</h2>
+                                                                    <p>Join us for Lunch, a Tour of the Manufacturing &amp; Design Center, and Learn about Spectra's Role in the Active Archive Alliance.</p>
+                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" valign="top" align="center">
+                                <table id="templateFooter" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td class="footerContent" bgcolor="#ffffff" valign="top">
+                                            <table style="border-top: 1px solid rgb(235, 235, 235); padding-bottom: 10px; padding-top: 10px;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="bottom"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/quote.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top"><a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/btn-webinars.jpg"></a><a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/btn-workshops.jpg"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px 0pt 0pt;" valign="top" align="center"><a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/icon-twitter.png"></a> <a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/icon-facebook.png"></a> <a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/icon-youtube.png"></a> <a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/icon-rss.png"></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                            <td class="footerContent" bgcolor="#ffffff" valign="top">
+                                            <table style="border-top: 1px solid rgb(235, 235, 235); padding-top: 40px;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top">
+                                                        <table border="0" cellpadding="3" cellspacing="0" width="240">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Boca Raton</strong></td>
+                                                                    <td style="text-align: right;" align="right">(561) 241-1610</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Palm Bch Gdns</strong></td>
+                                                                    <td style="text-align: right;" align="right">(561) 626-2662 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Wellington</strong></td>
+                                                                    <td style="text-align: right;" align="right">(561) 333-8882</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">West Palm Beach</strong></td>
+                                                                    <td style="text-align: right;" align="right">(561) 804-6965</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Coral Springs</strong></td>
+                                                                    <td style="text-align: right;" align="right">(954) 510-0600 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Davie</strong></td>
+                                                                    <td style="text-align: right;" align="right">(954) 510-0600 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color: rgb(125, 125, 125); font-size: 11px; margin-top: 0pt; padding: 5px 0pt;"><strong style="color: rgb(56, 5, 96);">Weston</strong></td>
+                                                                    <td style="text-align: right;" align="right">(954) 510-0600 </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" valign="top" align="center">
+                                <table id="templateFooter" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td class="footerContent" bgcolor="#101010" valign="top">
+                                            <table style="padding-top: 10px;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" align="center"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" valign="top" align="center">
+                                <table id="templateFooter" bgcolor="#101010" border="0" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td class="footerContent" bgcolor="#34055a" valign="top">
+                                            <table bgcolor="#34055a" border="0" cellpadding="15" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="middle" width="350"><a href="http://www.scoreatthetop.com" style="color: rgb(255, 255, 255);">www.scoreatthetop.com</a></td>
+                                                        <td style="text-align: right;" valign="middle"><a href="#"><img src="http://scoreatthetopsite.hotpressplatform.com/_photos/email/icon-hotpress.png"></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </center>
+    </body>
+</html>

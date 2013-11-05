@@ -1,0 +1,77 @@
+@charset "utf-8";
+#body {
+	background: url(/_assets/css/images/bg_edcSite_phone.jpg) no-repeat scroll center top #fff;
+	color:#0e99d3
+	font:normal 100% 'Lato', sans-serif;
+}
+
+
+div#main{
+		width:86%;
+}
+div#header{
+	margin:16px 0 8px;
+}
+div.logo{
+	width:52.306%;
+	margin: 0 0 0 5px;
+	}
+div#search{
+	display:none;
+	}
+div.diversify{
+	max-width:99%;
+	}
+div#utility-nav, #member-nav {
+	display:none;
+}
+
+div.see-all{
+	margin:0px 4px 10px 5px;
+	}
+div#events-header{
+	margin:0px 87px 10px 0px;
+	}
+div#section-2-info{
+	margin-left:43px;
+	width:26%;
+	}
+div#main-bus{
+	width:67.479%;
+	}
+div#main-default{
+	width:98%;
+}
+
+div#nav ul li a:link, #nav ul li a:visited, #nav ul li ul li a:link, #nav ul li ul li a:visited {
+	font-size:8px; /*0.723em; 12px;*/
+    /*font-weight: 300;*/
+    letter-spacing: 0.08em;
+    padding: 15px 0px 14px 7px;
+    text-transform: uppercase;
+}
+div#aside-left{
+	width:17.14893617021277%;
+	}
+
+#nav-site{
+	width:11.02227171492205%;
+}
+#nav-busclimate{
+	width:11.02227171492205%;
+}
+#nav-retail{
+	width:11.02227171492205%;
+}
+#nav-wf{
+	width:14.25389755011136%;
+}
+#nav-trans{
+	width:17.14699331848552%;
+}
+#nav-quality{
+	width:10.02227171492205%; 
+}
+#nav-about{
+	width:14.25389755011136%;
+}

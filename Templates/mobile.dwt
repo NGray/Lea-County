@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Economic Development Corporation of Lea County">
+<meta name="author" content="GrayStudio Web Design and Development">
+<link href="/favicon.ico" rel="shortcut icon">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!---Bootstrap--->
+<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+-->
+<link href="/mobile_site/_assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+.menu{
+	padding-left:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+	</style>
+<body>
+<div class="container">
+<header>
+<div class="row featurette">
+<div class="col-md-1"><img style="vertical-align:left; padding-bottom:30px;" src="/_assets/css/images/lea-county-logo.png" width="235" height="auto" alt="Lea County Economic Development Corporation logo"/></div>
+
+<div class="col-md-1"><img style="padding-bottom:30px;" src="/mobile_site/template_artwork-assets/diversify.png" width="250" height="auto" alt="Deversifying the EnergyPlex since 1963"/></div>
+</div>
+<!---menu--->
+
+        <div class="glyphicon-home"><a href="/"><img src="/_assets/css/images/btn_home-listen.png" class="img-responsive" alt="home button"/></a></div>
+        <nav class="navbar navbar-default" role="navigation">
+        <!--Brand and toggle get grouped for better mobile display--->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!--Collect the nav links, forms, and other content for toggling--->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+        	<li class="active"></li>
+            <li><a href="#">Sites & Buildings</a></li>
+            <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Climate<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#">Dempgraphics</a></li>
+                    <li><a href="#">Incentives</a></li>
+                    <li><a href="#">Largest Employers</a></li>
+                    <li><a href="#">Tax Information</a></li>
+                    <li><a href="#">New Business Growth</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+               </li>
+            <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workforce & Training<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#">Labor & Wages</a></li>
+                    <li><a href="#">Workforce Development</a></li>
+                    <li><a href="#">Top Industries</a></li>
+                </ul>
+               </li>
+               <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#">transportation</a></li>
+                    <li><a href="#">Utilities</a></li>
+                    <li><a href="#">Communications</a></li>
+                </ul>
+               </li>
+               <li><a href="#">Retail Housing</a></li>
+               <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality of Life<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#">Climate</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
+               </li>
+               <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#">Staff</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Board of Directors</a></li>
+                </ul>
+               </li>
+               </ul>
+            </div>
+          </div>
+      	</nav>
+
+     
+
+
+</header>
+<section>
+ <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+ </section>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/mobile_site/_assets/js/bootstrap.js"></script>
+</body>
+</html>

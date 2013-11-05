@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- TemplateBeginEditable name="doctitle" --><title></title><!-- TemplateEndEditable--><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+    <link href="/_assets/css/mQuery.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+	 window.ISLOGGEDIN = {module_isloggedin};
+        </script>
+        
+    </head>
+    <body>
+        {module_contentholder,26284}{module_contentholder,68679}
+        <div id="container">
+        <div id="header">
+        <div class="logo"><a href="/home"><img alt="Lea County EDC" src="/_assets/css/images/lea-county-logo.png" /></a></div>
+        <div class="secton-4">
+        <div class="diversify"><img src="/_assets/css/images/diversify.png" alt="Diversifying the EnergyPlex" /></div>
+        <div id="search">
+        {module_contentholder,29413}
+        </div>
+        <!-- End Search -->
+        </div>
+        
+        <div class="section-6">
+       <div id="shopping-cart">{module_shoppingcartsummary,,}</div>
+        <div id="utility-nav">
+        {module_menu,876379}
+        </div>
+        <!-- End Utility Nav -->
+        <div id="member-nav">
+        {module_menu,1170869}
+        </div>
+        </div>
+        <!-- End Members Nav -->
+       </div>
+        <!-- End Header -->
+        <div id="nav">
+        {module_menu,876378}
+        </div>
+        <!-- End Nav -->
+        <div id="body">
+        <div id="main">
+       
+        <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+        </div>
+        <!-- End Main -->
+        <div id="aside-left">
+        <div id="sub-nav">
+        {module_menu,875978}
+        </div>
+        <!-- End Sub Nav -->
+        <!-- <div id="newsletter">
+        >{module_webform,40419}
+        </div> -->
+        <div id="cta">
+        {module_menu,1161878}
+        </div>
+        <!-- End Call to Action -->
+        </div>
+        <!-- End Aside-->
+        </div>
+        <!-- End Body -->
+         <div id="footer">
+        <!-- End Footer Utility -->
+        <div id="footer-nav">
+        	<div id="footer-section-1">
+        {module_menu,876049}
+         
+          </div>          
+        <!---Start Newsletter sign up form -->
+       <!-- <div id="footer-section-2">
+        <form name="catwebformform56032" method="post" onsubmit="return checkWholeForm56032(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=40419&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}"> <span class="req">*</span>  Required<table class="webform" cellspacing="0" cellpadding="2" border="0"><tr><td><label for="Title">Title</label><br /><select name="Title" id="Title" class="cat_dropdown_smaller"><option value="1811457">DR</option><option value="1811456">MISS</option><option value="1811453" selected="selected">MR</option><option value="1811454">MRS</option><option value="1811455">MS</option></select></td></tr><tr><td><label for="FirstName">First Name <span class="req">*</span></label><br /><input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" /> </td></tr><tr><td><label for="LastName">Last Name <span class="req">*</span></label><br /><input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" /> </td></tr><tr><td><label for="EmailAddress">Email Address <span class="req">*</span></label><br /><input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" /> </td></tr><tr><td><input type="checkbox" name="CampaignList_27563" />Subscribe to: Web Form Signup</td></tr><tr><td><input class="cat_button" type="submit" value="Submit" id="catwebformbutton" /></td></tr></table><script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
+//<![CDATA[
+var submitcount56032 = 0;function checkWholeForm56032(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if(why != ""){alert(why);return false;}if(submitcount56032 == 0){submitcount56032++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+//]]>
+</script></form>
+</div>-->
+      
+        </div>
+        <!-- End Footer Nav -->
+        <div id="graystudio-link">
+        <p>
+        <a href="http://www.graystudio.net" target="_blank">Design By Gray Studio Web Design</a></p>
+        </div>
+        </div>
+        <!--End Footer-->
+        </div>
+        <!--End Container-->
+       {module_contentholder,26285}
+        </div>
+    </body>
+</html>

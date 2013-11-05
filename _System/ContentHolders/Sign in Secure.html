@@ -1,0 +1,53 @@
+<script type="text/javascript">
+$(function(){
+$("#form-password").hide();
+$("#btn-password").click(function() {
+$("#form-password").show();
+$("#form-login").hide();
+return false;
+});
+$("#btn-login").click(function() {
+$("#form-password").hide();
+$("#form-login").show();
+return false;
+});
+} );
+
+</script>
+<div id="form-login">
+<div class="col-2">
+<h3>Dashboard Sign In</h3>
+<form name="catseczoneform14499" onsubmit="return checkWholeForm14499(this)" method="post" action="/ZoneProcess.aspx?ZoneID=6069">
+    <div class="form">
+    <div class="item"><label for="SZUsername"><strong>Email Address</strong></label><br />
+    <input type="text" class="cat_textbox_small" name="Username" id="SZUsername" maxlength="255" /></div>
+    <div class="item"><label for="SZPassword"><strong>Password</strong></label><br />
+    <input type="password" class="cat_textbox_small" name="Password" id="SZPassword" maxlength="255" /><br />
+    <a id="btn-password" href="#">Forgot your password?</a></div>
+    <div class="item"><input type="checkbox" name="RememberMe" id="RememberMe" /><label for="RememberMe">Remember Me</label></div>
+    <div class="item"><input type="submit" class="cat_button" value="Sign In" /></div>
+    </div>
+    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+    <script type="text/javascript">
+//<![CDATA[
+function checkWholeForm14499(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+//]]>
+</script>
+</form>
+</div>
+<!-- End Col 2 -->
+</div>
+<!-- end form login -->
+<br class="clearabove" />
+<div id="form-password">
+<h3>Forgot Password?</h3>
+<p>Enter your email address below and we'll send your password within a few seconds.</p>
+<form name="catseczonelpform12264" method="post" action="/LostPasswordProcess.aspx">
+    <div class="form">
+    <div class="item"><label for="SZUsername"><strong>Email Address</strong></label><br />
+    <input type="text" class="cat_textbox_small" name="Username" id="SZUsername" maxlength="255" /></div>
+    <div class="item"><input type="submit" class="cat_button" value="Send my password" /></div>
+    </div>
+    <p>Nevermind, <a id="btn-login" href="#">send me back to the sign in screen</a></p>
+</form>
+</div>

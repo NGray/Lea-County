@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="/_assets/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/_assets/css/screen-5.css" type="text/css" media="screen" />
+<link href="http://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+<!--load slideshow--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="/_assets/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("ul.slides img").each(function(){
+		var noImage = $(this).attr("src");
+		if(noImage == ""){
+			$(this).remove();	
+		}else{
+		$(this).wrap("<li></li>");
+		}
+	});
+	
+	$("ol.flex-control-nav img").each(function(){
+		var noThumb = $(this).attr("src");
+		if(noThumb == ""){
+			$(this).remove();	
+		}else{
+		$(this).wrap('<li><a href="#"></a></li>');	
+		}
+	});
+	
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlsContainer: ".flex-container",
+		directionNav: false,
+		controlNav: true,
+		slideToStart: 0,
+		before: function(slider) {
+        	$('.shade').fadeIn('1000');
+		},
+		after: function(slider) {
+        	$('.shade').fadeOut('1000');
+	    }
+	});
+	
+	$('ul.slides li').append('<div class="shade"/>');
+	$('.flex-control-nav:last').remove();
+	
+	$(".flex-caption").css("display","none");
+	$("a.toggleswitch").click(function(e){
+                e.preventDefault();
+		$(".flex-caption").fadeToggle('fast',function(){
+			$("a.toggleswitch").toggleClass("btnCloseStory");
+		});
+	});
+});
+</script>
+<!--load dynamic menu-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#nav ul li').hover(function () {
+        var $this = $(this);
+        var subMenu = $this.find("ul");
+        $('#nav ul li ul').stop(true, true);
+        subMenu.stop().slideDown(800);
+    }, function () {
+        var $this = $(this);
+        var subMenu = $this.find("ul");
+        subMenu.stop().slideUp(400);
+    });
+}); 
+</script>

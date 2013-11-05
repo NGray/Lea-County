@@ -1,0 +1,28 @@
+<div id="main">
+<h2>{tag_blogtitle}</h2>
+<p class="description">{tag_blogdescription}</p>
+<div class="post-list">     {tag_postlist,2}
+<p class="page-nav">{tag_previouspage} {tag_pagination} {tag_nextpage}</p>
+</div>
+</div>
+<!-- End Main Body -->
+<div id="aside">
+<div id="sub-nav">
+<strong>Recent Posts</strong>
+{tag_blogrecentpost}
+<strong>Tags</strong>
+{tag_blogtaglist}
+<strong>Archive</strong>
+{tag_blogpostarchive}
+</div>
+<!-- End Sub Nav -->
+<!-- <div id="newsletter">
+        {module_webform,40419}
+        </div> -->
+<div id="cta">
+{module_menu,1161878}
+</div>
+<!-- End Call to Action -->
+</div>
+<!-- End Aside-->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

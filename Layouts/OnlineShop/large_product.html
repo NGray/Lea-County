@@ -1,0 +1,66 @@
+<script type="text/javascript">
+(function ($) {
+    $(function () {
+        var $productPopletLinks = $("td.productPopletsItem a");
+        $productPopletLinks.each(function (idx) {
+            /* remove default light box populet behavior from each popl*/
+            var $this = $(this);
+            $this.removeAttr("onclick");
+            $this.removeAttr("rel");
+            this.onclick = null;
+        });
+        $productPopletLinks.click(function (event) {
+            event.preventDefault();
+            var $largeImg = $(".product-image-lrg img");
+            var $largeImgContainer = $largeImg.parent("div");
+            var popImageUrl = $(this).attr("href");
+            var $newImg = $("<img style=\"display:none;\"></img>");
+
+            /* Load fires when the image is done loading over 
+            network or from cache.
+                          
+            After load we fade out, after fade out, we fade in.
+            The fade out happens in the load handler so that there
+            is no pause between fade out and in, while image is loading.
+         */
+            $newImg.load(function () {
+                $largeImg.fadeOut(function () {
+                    $largeImg.remove();
+                    $newImg.fadeIn();
+                });
+            });
+
+            //causes newImage to load and fire onload.  
+            $newImg.appendTo($largeImgContainer);
+            $newImg.attr("src", popImageUrl);
+        });
+    });
+})(jQuery);
+</script>
+<div class="product-details">
+<div class="product-aside">
+<div class="product-image-lrg">{tag_largeimage}</div>
+{tag_poplets,5} </div>
+<div class="product-main">
+<h2>{tag_name}</h2>
+<div class="price">Price: <strong>{tag_saleprice}</strong></div>
+<hr />
+{tag_grouping}
+<div class="attributes">{tag_attributes}</div>
+<hr />
+<div class="product-col-1">
+<div class="qty"> Quantity: <strong>{tag_addtocartinputfield}</strong></div>
+<div class="stock">({tag_instock} in-stock)</div>
+</div>
+<div class="product-col-2">
+{tag_buynow,Buy Now}
+{tag_addtocart}
+<div class="wish">{tag_addtofavorites,Add to Wishlist,Remove from Wishlist}</div>
+</div>
+<div class="product-description">
+<h4>Product Information:</h4>
+{tag_description} </div>
+</div>
+<!-- End Main -->
+</div>
+<!-- End Product Details -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="/_assets/css/screen-5.css" type="text/css" media="screen" /> 
+<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#nav ul li').hover(function () {
+        var $this = $(this);
+        var subMenu = $this.find("ul");
+        $('#nav ul li ul').stop(true, true);
+        subMenu.stop().slideDown(800);
+    }, function () {
+        var $this = $(this);
+        var subMenu = $this.find("ul");
+        subMenu.stop().slideUp(400);
+    });
+}); 
+</script>
+</head>
+
+<body>
+	<div id="nav">
+   		<ul>
+			<li><a style=" background:url(/_assets/css/images/btn_home-listen.png) no-repeat;" href="#"></a></li>
+            <li><a href="#">Quality of Life</a>
+            	<ul>
+                	<li><a href="#">Climate</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Workforce & Education</a>
+                <ul>
+                    <li><a href="#">Labor & Wages</a></li>
+                    <li><a href="#">Largest Employers</a></li>
+                    <li><a href="#">Top Industries</a></li>
+                    <li><a href="#">Workforce Development</a></li>
+                 </ul>
+             </li>
+             <li><a href="#">Transportation & Infrastructure</a>
+                 <ul>
+                     <li><a href="#">Transportation</a></li>
+                     <li><a href="#">Utilities</a></li>
+                 </ul>
+              </li>
+              <li><a href="#">About / Contact EDCLC</a></li>
+              <li><a href="#">Business Climate</a>
+                    <ul>
+                        <li><a href="#">Demographics</a></li>
+                        <li><a href="#">Economy</a></li>
+                        <li><a href="#">Incentives</a></li>
+                        <li><a href="#">Labor & Wages</a></li>
+                        <li><a href="#">Largest Employers</a></li>
+                        <li><a href="#">Tax Information</a></li>
+                        <li><a href="#">Top Industries</a></li>
+                    </ul>
+                </li>
+				<li><a href="#">Retail & Housing</a></li>
+				<li><a href="#">Sites & Buildings</a></li>
+			</ul> 
+        </div>
+</body>
+</html>

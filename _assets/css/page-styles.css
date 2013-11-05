@@ -1,0 +1,20 @@
+/*
+	HotPress Web Framework
+	By: Team HotPress Web
+	Created: 2011	
+*/
+
+/* Page Styles
+----------------------------------------------------------------------------------------------------*/
+.clearFloat{
+	clear:both;
+}
+.this{
+	font-size:9px;
+	color:#444;
+}
+.that{
+	padding:10px;
+	text-align:center;
+	color:#3b3b3b;
+}

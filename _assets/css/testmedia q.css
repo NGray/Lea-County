@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+/*Media Queries-------------------------------------------------*/
+/*from screen-5.css--*/
+/*small screen devices, like phones, hand held devices portrait mode
+----------------------------------------*/
+@media screen and (max-width: 320px) {
+	#nav-right {
+		display:none;
+	}	
+	
+		#nav {
+		margin:0!important;	
+		}
+}
+/* small screen devices, like phones in landscape mode
+------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+	
+}
+/* smaller tablets, like Amazons Kindle (600 x 800) and Barnes and Nobles Nook  (600 * 1024),portrait mode
+--------------------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+	div#container {
+		margin: 0 auto;
+		max-width:98%;/*960px;*/
+	}
+	div#header {
+	margin: 16px 0 35px;
+	}
+	div#main{
+		width:68.479%;
+		}
+}
+/* ten-inch tablets like the iPad (768x1024) in portrait mode 
+----------------------------------------------------------*/
+@media screen and (max-width:768px) {
+	body{
+		font-size:100%;
+	}
+	#container {
+		margin: 0 auto;
+		max-width:98%;/*960px;*/
+	}
+	.logo{
+		width:50%;
+	}
+	#main{
+		width:68.479%;
+		}
+	.section-3{
+		margin-right:17px;
+		width:28.985%;
+		}
+	#header {
+	margin: 16px 0 35px;
+	}
+	
+}
+/* tablets like the iPad (1024x768px) in landscape mode, as well as smaller laptops
+-------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+	body{
+		font-size:100%;
+	}
+	
+}
+
+/* for widescreen displays, like laptop and desktop browsers
+-----------------------------------------------------------*/
+@media screen and (max-width:1200px) {
+	body{
+		font-size:100%;
+	}
+		
+}
+/*For print*/
+@media print {
+	body{
+		font-size:15pt;
+}
+}
+

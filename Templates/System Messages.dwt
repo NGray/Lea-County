@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>{module_pagename}</title>
+    <!-- TemplateEndEditable -->
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+    <link href="/_assets/css/mQuery.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body id="system-message">
+        {module_contentholder,26284}
+        <div id="system-container">
+        <div id="system-header">
+         <div class="logo"><a href="/home"><img alt="Lea County EDC" src="/_assets/css/images/lea-county-logo.png" /></a></div>
+        <div class="secton-4">
+        <div class="diversify"><img src="/_assets/css/images/diversify.png" alt="Diversifying the EnergyPlex" /></div>
+        <div id="search">
+        {module_contentholder,29413}
+        </div>
+        <!-- End Search -->
+        </div>
+        <!-- End System header -->
+        <div id="system-body">
+        <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+        </div>
+        <!-- End Body -->
+        </div>
+        <!-- End Container-->
+        {module_contentholder,26285}
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/_assets/css/flexslider.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="/_assets/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("ul.slides img").each(function(){
+		var noImage = $(this).attr("src");
+		if(noImage == ""){
+			$(this).remove();	
+		}else{
+		$(this).wrap("<li></li>");
+		}
+	});
+	
+	$("ol.flex-control-nav img").each(function(){
+		var noThumb = $(this).attr("src");
+		if(noThumb == ""){
+			$(this).remove();	
+		}else{
+		$(this).wrap('<li><a href="#"></a></li>');	
+		}
+	});
+	
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlsContainer: ".flex-container",
+		directionNav: false,
+		controlNav: true,
+		slideToStart: 0,
+		before: function(slider) {
+        	$('.shade').fadeIn('1000');
+		},
+		after: function(slider) {
+        	$('.shade').fadeOut('1000');
+	    }
+	});
+	
+	$('ul.slides li').append('<div class="shade"/>');
+	$('.flex-control-nav:last').remove();
+	
+	$(".flex-caption").css("display","none");
+	$("a.toggleswitch").click(function(e){
+                e.preventDefault();
+		$(".flex-caption").fadeToggle('fast',function(){
+			$("a.toggleswitch").toggleClass("btnCloseStory");
+		});
+	});
+});
+</script>

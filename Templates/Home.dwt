@@ -56,20 +56,8 @@
         </div>
         <p>Browse through available properties in Lea County</p> </div>
         </div>
-        <div class="info-container">
-        <div id="news-header">NEWS &amp; PUBLICATIONS</div>
-        <div class="see-all"><a href="/news">see all</a></div>
-        <div class="announcement-container">
-		{module_announcement,a,,,,_blank}
-        </div>
-        </div>
-        <!--<div id="info-events">
-        <div id="events-header">EVENTS</div>     
-        <div class="see-all"><a href="/events">see all</a></div>
-        <div class="announcement-container">  
-        {module_booking,a,}
-        </div>
-        </div>-->
+        
+      
         </div>
         <!--begin hero-->
         <div class="section-4a">
@@ -78,13 +66,13 @@
         </div><!--hero-->
         </div><!--section-4-->
         <!-- end hero -->
-        <div class="section-4">
+       <!-- <div class="section-4">
         <ul>
           <li id="flyhobbs"><a href="http://www.flyhobbs.com" target="new"><img src="/_assets/css/images/btn_flyHobbs2.fw.png" alt="fly hobbs" /></a></li>
           <li id="lcedcmap"><img src="/_assets/css/images/btn_leaCounty2.fw.png" alt="lea county map" /></li>
           <li id="energyplex"><a href="http://energyplexnm.com" target="_top"><img src="/_assets/css/images/btn_energyPlex2.fw.png" alt="energyplex" /></a></li>
          </ul>
-        </div>
+        </div>-->
         <div id="body">
        <!-- <div id="main">-->
         <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
@@ -143,7 +131,7 @@ var submitcount56032 = 0;function checkWholeForm56032(theForm){var why = "";if (
         <!--End Footer-->
         </div>
         <!--End Container-->
-        {module_contentholder,70422}{module_contentholder,26285}
+        {module_contentholder,26285}
     <!--hero script-->
         <script type="text/javascript">
 $(window).load(function() {

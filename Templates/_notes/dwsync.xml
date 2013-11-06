@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="About_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130171145340000000" remote="130171145340000000" Dst="2" />
 <file name="About.dwt" server="leacounty.worldsecuresystems.com//" local="130171145364830000" remote="130171145340000000" Dst="2" />
-<file name="About_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130040717386122000" remote="130040717420000000" Dst="1" />
-<file name="Default_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130024099820000000" remote="130024099820000000" Dst="1" />
-<file name="Default_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130150399510000000" remote="130150399510000000" Dst="2" />
 <file name="Default.dwt" server="leacounty.worldsecuresystems.com//" local="130150399468516000" remote="130150399510000000" Dst="2" />
 <file name="Events_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130171146730000000" remote="130171146730000000" Dst="2" />
 <file name="Events_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130171146730000000" remote="130171146730000000" Dst="2" />
 <file name="Events.dwt" server="leacounty.worldsecuresystems.com//" local="130171146769970000" remote="130171146730000000" Dst="2" />
 <file name="Home_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130053265386468000" remote="130053229480000000" Dst="2" />
 <file name="Home_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130171150250000000" remote="130171150250000000" Dst="2" />
-<file name="Home.dwt" server="leacounty.worldsecuresystems.com//" local="130271387844660000" remote="130271387070000000" Dst="2" />
+<file name="Home.dwt" server="leacounty.worldsecuresystems.com//" local="130282441314580000" remote="130282440550000000" Dst="1" />
 <file name="News_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130164042820000000" remote="130164042820000000" Dst="2" />
 <file name="News_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130164042820000000" remote="130164042820000000" Dst="2" />
 <file name="News.dwt" server="leacounty.worldsecuresystems.com//" local="130164043030772000" remote="130164042820000000" Dst="2" />
@@ -33,9 +29,6 @@
 <file name="Transportation.dwt" server="leacounty.worldsecuresystems.com//" local="130171152529170000" remote="130171152510000000" Dst="2" />
 <file name="Transportation_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130171152510000000" remote="130171152510000000" Dst="2" />
 <file name="Transportation_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130171152510000000" remote="130171152510000000" Dst="2" />
-<file name="About Copy.dwt" server="leacounty.worldsecuresystems.com//" local="130152937770840000" remote="130152937750000000" Dst="2" />
-<file name="About Copy_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130152937750000000" remote="130152937750000000" Dst="2" />
-<file name="About Copy_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130152937750000000" remote="130152937750000000" Dst="2" />
 <file name="work.dwt" server="leacounty.worldsecuresystems.com//" local="130088093690000000" remote="130088093690000000" Dst="2" />
 <file name="work_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130088093690000000" remote="130088093690000000" Dst="2" />
 <file name="BClim_workF.dwt" server="leacounty.worldsecuresystems.com//" local="130156246810000000" remote="130171140040000000" Dst="2" />
@@ -43,8 +36,6 @@
 <file name="BClim_workF_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130171140040000000" remote="130171140040000000" Dst="2" />
 <file name="work_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130088093690000000" remote="130088093690000000" Dst="2" />
 <file name="Default2.dwt" server="leacounty.worldsecuresystems.com//" local="130150418205876000" remote="130150418270000000" Dst="2" />
-<file name="Default2_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130150418270000000" remote="130150418270000000" Dst="2" />
-<file name="Default2_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130150418270000000" remote="130150418270000000" Dst="2" />
 <file name="Products.dwt" server="leacounty.worldsecuresystems.com//" local="130171151682750000" remote="130171151630000000" Dst="2" />
 <file name="Products_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130171151630000000" remote="130171151630000000" Dst="2" />
 <file name="Products_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130171151630000000" remote="130171151630000000" Dst="2" />
@@ -64,4 +55,5 @@
 <file name="UsersV2_Phone.dwt" server="leacounty.worldsecuresystems.com//" local="130196059460000000" remote="130196059460000000" Dst="2" />
 <file name="UsersV2_Tablet.dwt" server="leacounty.worldsecuresystems.com//" local="130196059460000000" remote="130196059460000000" Dst="2" />
 <file name="mobile.dwt" server="leacounty.worldsecuresystems.com//" local="130260848659102000" remote="130260848410000000" Dst="2" />
+<file name="DefaultFD.dwt" server="leacounty.worldsecuresystems.com//" local="130281467754310000" remote="130282343530000000" Dst="1" />
 </dwsync>

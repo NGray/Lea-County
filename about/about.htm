@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" ><!-- InstanceBegin template="/edclc/fdTemplates/AboutFD.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!-- InstanceBeginEditable name="doctitle" --><title>{module_pagename}</title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/home_badge_64.png" />
+    <link rel="apple-touch-icon-precomposed" href="/home_badge_64.png" />
+    
+    <link rel="stylesheet" href="/_fdassets/css/normalize.css">
+    <link rel="stylesheet" href="/_fdassets/css/foundation.css" />
+    <link rel="stylesheet" href="/_fdassets/css/styles-fd.css">
+    <script src="/_fdassets/js/custom.modernizr.js"></script>
+    <script type="text/javascript">
+    // Will retun 1 or 0 based on if user is logged in(1) or not logged in(0)
+    var _isLoggedIn = !!parseInt("{module_isloggedin}"),
+		device = "{system_visitorDeviceClass}";
+    </script>
+</head>
+<body>
+{module_contentholder, name="_Template - Header"}
+<!-- end header -->
+<div class="wrapper">
+	<div class="row add-bottom">
+		<div class="column large-12">
+			<h1 class="ptitle left">{module_pagename}</h1>
+			<div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+	<div class="row add-bottom">
+		<div class="columns large-9">
+			<!-- InstanceBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- InstanceEndEditable -->
+		</div>
+		<!-- end .columns.large-9 -->
+		<div class="columns large-3">
+			<aside>
+				{module_menu, version="2", menuId="2042386", moduleTemplateGroup="Blank"}
+				<h5>Get on our Newsletter list</h5>
+				{module_webform,83325}
+				<h5>Most commented Posts</h5>
+				{module_webapps,18277,a,,,,,3,,1,comments template="/_settings/comments-layout"}
+			</aside>
+		</div>
+		<!-- end .columns.large-4 -->
+	</div>
+	<!-- end .row -->
+</div>
+<!-- end .wrapper -->
+{module_contentholder, name="_Template - Footer"}
+<!-- end footer -->
+{module_contentholder, name="_Template - Scripts"}
+</body>
+<!-- InstanceEnd --></html>

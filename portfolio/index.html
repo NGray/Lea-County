@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><!-- InstanceBegin template="/Templates/Portfolio.dwt" codeOutsideHTMLIsLocked="false" --><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!-- InstanceBeginEditable name="doctitle" --><title>Portfolio of Work</title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        
+    <!-- InstanceEndEditable -->
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/home_badge_64.png" />
+    <link rel="apple-touch-icon-precomposed" href="/home_badge_64.png" />
+    
+    <link rel="stylesheet" href="/_fdassets/css/normalize.css">
+    <link rel="stylesheet" href="/_fdassets/css/foundation.css" />
+    <link rel="stylesheet" href="../edclc/fdportfolio/edclc/_assets/css/styles.css">
+    <script src="/_fdassets/js/custom.modernizr.js"></script>
+    <script type="text/javascript">
+    // Will retun 1 or 0 based on if user is logged in(1) or not logged in(0)
+    var _isLoggedIn = !!parseInt("{module_isloggedin}"),
+		device = "{system_visitorDeviceClass}";
+    </script>
+</head>
+<body>
+{module_contentholder, name="_Template - Header"}
+<!-- end header -->
+<div class="wrapper">
+	<div class="row add-bottom">
+		<div class="column large-12">
+			<h1 class="ptitle left">{module_pagename}</h1>
+			<div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+	<div class="row">
+		<div class="columns large-12">
+		<!-- InstanceBeginEditable name="ContentArea" -->
+        <div id="portScroll">
+        {module_webapps,18269,a,,,,,5,,1,datereverse}
+        </div>
+    <!-- InstanceEndEditable -->
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+</div>
+<!-- end .wrapper -->
+{module_contentholder, name="_Template - Footer"}
+<!-- end footer -->
+{module_contentholder, name="_Template - Scripts"}
+<script src="/_fdassets/js/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript">
+  // infinitescroll() is called on the element that surrounds 
+  // the items you will be loading more of
+  $('#portScroll').infinitescroll({
+	navSelector  : "#webapp18269pagination",            
+				   // selector for the paged navigation (it will be hidden)
+	nextSelector : ".pag-next a:first",    
+				   // selector for the NEXT link (to page 2)
+	itemSelector : "#portScroll .port-list",          
+				   // selector for all items you'll retrieve
+	animate      : true, 
+				   
+	// Options for the loading of more tiles				   
+	loading: {
+		finished: undefined,
+		finishedMsg: "<em>No more to load</em>",
+		img: "/_assets/images/ajaxLoader.gif",
+		msg: null,
+		msgText: "<em>Loading More...</em>",
+		selector: null,
+		speed: 'fast',
+		start: undefined
+	}
+  });
+</script>
+</body>
+<!-- InstanceEnd --></html>

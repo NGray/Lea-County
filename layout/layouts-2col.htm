@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><!-- InstanceBegin template="/Templates/2Col - Layout.dwt" codeOutsideHTMLIsLocked="false" --><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!-- InstanceBeginEditable name="doctitle" --><title>Layouts - 2 Column</title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        
+    <!-- InstanceEndEditable -->
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/home_badge_64.png" />
+    <link rel="apple-touch-icon-precomposed" href="/home_badge_64.png" />
+    
+    <link rel="stylesheet" href="/_fdassets/css/normalize.css">
+    <link rel="stylesheet" href="/_fdassets/css/foundation.css" />
+    <link rel="stylesheet" href="../edclc/fdlayout/edclc/_assets/css/styles.css">
+    <script src="/_fdassets/js/custom.modernizr.js"></script>
+    <script type="text/javascript">
+    // Will retun 1 or 0 based on if user is logged in(1) or not logged in(0)
+    var _isLoggedIn = !!parseInt("{module_isloggedin}"),
+		device = "{system_visitorDeviceClass}";
+    </script>
+</head>
+<body>
+{module_contentholder, name="_Template - Header"}
+<!-- end header -->
+<div class="wrapper">
+	<div class="row add-bottom">
+		<div class="column large-12">
+			<h1 class="ptitle left">{module_pagename}</h1>
+			<div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+	<div class="row add-bottom">
+		<div class="columns large-9">
+			<!-- InstanceBeginEditable name="ContentArea" -->
+        <h1>HTML Ipsum Presents</h1>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+        <h2>Header Level 2</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+        <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+        </blockquote>
+        <h3>Header Level 3</h3>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+        <pre><code>
+#header h1 a { 
+	display: block; 
+	width: 300px; 
+	height: 80px; 
+}
+</code></pre>
+    <!-- InstanceEndEditable -->
+		</div>
+		<!-- end .columns.large-9 -->
+		<div class="columns large-3">
+			<aside>
+				<h5 class="alt">Join Our Newsletter list</h5>
+				{module_webform,83325}
+				<h5 class="alt">Most Commented Posts</h5>
+				{module_webapps,18277,a,,,,,3,,1,comments template="/_settings/comments-layout"}
+			</aside>
+		</div>
+		<!-- end .columns.large-4 -->
+	</div>
+	<!-- end .row -->
+</div>
+<!-- end .wrapper -->
+{module_contentholder, name="_Template - Footer"}
+<!-- end footer -->
+{module_contentholder, name="_Template - Scripts"}
+</body>
+<!-- InstanceEnd --></html>

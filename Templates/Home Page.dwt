@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!-- TemplateBeginEditable name="doctitle" --><title>{module_pagename}</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+   {module_contentholder,98804} 
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+    <script src="/_assets/js/custom.modernizr.js"></script>
+    <script type="text/javascript">
+    // Will retun 1 or 0 based on if user is logged in(1) or not logged in(0)
+    var _isLoggedIn = !!parseInt("{module_isloggedin}");
+    </script>
+    
+</head>
+<body id="home">
+{module_contentholder, name="_Template - Header"} 
+<!-- end header -->
+<div id="hero">
+    <div class="row collapse">
+    <div class="columns large-12">
+    <ul data-orbit data-options="timer_speed:4000;bullets:false;">
+      {module_webapps,13219,a}  <!---hero--->
+    </ul>
+    </div>
+    <!-- end .columns.large-12 --> 
+    </div>
+ </div>
+
+<div class="row add-bottom services">
+	<!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+</div>
+<!-- end .row -->
+
+<div class="row add-bottom">
+    <div class="columns large-6 testimonials">
+    	{module_contentholder, name="_Web App - Testimonials"}
+    </div>
+    <!-- end .columns.large-6 -->
+    <div class="columns large-6 recent-news">
+    	{module_contentholder, name="_Web App - Blog - Recent"}
+    </div>
+    <!-- end .columns.large-6 --> 
+</div>
+<!-- end .row --> 
+{module_contentholder, name="_Template - Footer"} 
+<!-- end footer --> 
+{module_contentholder, name="_Template - Scripts"}
+</body>
+</html>

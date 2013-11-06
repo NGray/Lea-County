@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><!-- InstanceBegin template="/Templates/Default.dwt" codeOutsideHTMLIsLocked="false" --><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/home_badge_64.png" />
+    <link rel="apple-touch-icon-precomposed" href="/home_badge_64.png" />
+    
+    <link rel="stylesheet" href="/_fdassets/css/normalize.css">
+    <link rel="stylesheet" href="/_fdassets/css/foundation.css" />
+    <link rel="stylesheet" href="../edclc/fdusers/edclc/_assets/css/styles.css">
+    <script src="/_fdassets/js/custom.modernizr.js"></script>
+    <script type="text/javascript">
+    // Will retun 1 or 0 based on if user is logged in(1) or not logged in(0)
+    var _isLoggedIn = !!parseInt("{module_isloggedin}"),
+		device = "{system_visitorDeviceClass}";
+    </script>
+</head>
+<body>
+{module_contentholder, name="_Template - Header"}
+<!-- end header -->
+<div class="wrapper">
+	<div class="row add-bottom">
+		<div class="column large-12">
+			<h1 class="ptitle left">{module_pagename}</h1>
+			<div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+	<div class="row add-bottom">
+		<div class="columns large-12">
+			<!-- InstanceBeginEditable name="ContentArea" --><h1>Join Interior Design Co.</h1>
+<div class="columns large-6">
+	<p>Create an account to take advantage of the features and benefits that make using our website faster and easier:</p>
+	<ul class="circle">
+	    <li>Save items to your wish list</li>
+	    <li>Order tracking and order history</li>
+	    <li>Save your account information</li>
+	    <li>Receive email updates and offers</li>
+	</ul>
+	<h5 class="alt"><span>Already have an Account? Sign In</span></h5>
+	<div class="secure-login">
+		<form name="catseczoneform52147" onsubmit="return checkWholeForm52147(this)" method="post" action="/ZoneProcess.aspx?ZoneID=51&amp;Referrer={module_siteUrl,true,true}&amp;OID={module_oid}&amp;OTYPE={module_otype}">
+		    <div class="form">
+			    <div class="item">
+			    	<input class="cat_textbox_small" type="text" name="Username" id="SZUsername" placeholder="Username" maxlength="255" />
+			    </div>
+			    <div class="item">
+			    	<input class="cat_textbox_small" type="password" name="Password" id="SZPassword" placeholder="Password" maxlength="255" autocomplete="off" />
+			    </div>
+			    <div class="item">
+			    	<label for="RememberMe"><input type="checkbox" name="RememberMe" id="RememberMe" />          Remember Me</label>
+			    </div>
+			    <div class="item">
+			    	<input class="button radius" type="submit" value="Log in" />&nbsp;<a href="/_System/SystemPages/PasswordRetrieveRequest">Lost password?</a>
+			    </div>
+		    </div>
+		    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+		    <script type="text/javascript">
+			//<![CDATA[
+			function checkWholeForm52147(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+			//]]>
+			</script>
+		</form>
+	</div>
+</div>
+<div class="columns large-6">
+<h5 class="alt"><span>Create a New Account</span></h5>
+	<div class="signupform">
+		{module_webform,63704}
+	</div>
+</div>
+
+
+<!-- InstanceEndEditable -->
+		</div>
+		<!-- end .columns.large-12 -->
+	</div>
+	<!-- end .row -->
+</div>
+<!-- end .wrapper -->
+{module_contentholder, name="_Template - Footer"}
+<!-- end footer -->
+{module_contentholder, name="_Template - Scripts"}
+</body>
+<!-- InstanceEnd --></html>

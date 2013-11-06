@@ -26,31 +26,31 @@
 {module_contentholder, name="_Template - Header"}
 <!-- end header -->
 <div class="wrapper">
-	<div class="row add-bottom">
-		<div class="column large-12">
-			<h1 class="ptitle left">{module_pagename}</h1>
-			<div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
-		</div>
-		<!-- end .columns.large-12 -->
+    <div class="row add-bottom">
+	    <div class="column large-12">
+		    <h1 class="ptitle left">{module_pagename}</h1>
+		    <div class="breadcrumb right">{module_breadcrumbs, &nbsp;|&nbsp; }</div>
+	    </div>
+	    <!-- end .columns.large-12 -->
 	</div>
-	<!-- end .row -->
+	    <!-- end .row -->
 	<div class="row add-bottom">
-		<div class="columns large-9">
-			<!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
-		</div>
-		<!-- end .columns.large-9 -->
-		<div class="columns large-3">
-			<aside>
-				{module_menu, version="2", menuId="1405849", moduleTemplateGroup="Blank"}
-				<h5>Get on our Newsletter list</h5>
-				{module_webform,83325}
-				<h5>Most commented Posts</h5>
-				{module_webapps,18277,a,,,,,3,,1,comments template="/_settings/comments-layout"}
-			</aside>
-		</div>
-		<!-- end .columns.large-4 -->
-	</div>
-	<!-- end .row -->
+	    <div class="columns large-9">
+	    	<!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+	    </div>
+	    <!-- end .columns.large-9 -->
+	    <div class="columns large-3">
+		    <aside>
+			    {module_menu, version="2", menuId="1483678", moduleTemplateGroup="Blank"}
+			    <h5>Get on our Newsletter list</h5>
+			    {module_webform,83325}
+			    <h5>Most commented Posts</h5>
+			    {module_webapps,18277,a,,,,,3,,1,comments template="/_settings/comments-layout"}
+		    </aside>
+	    </div>
+	    <!-- end .columns.large-4 -->
+    </div>
+    <!-- end .row -->
 </div>
 <!-- end .wrapper -->
 {module_contentholder, name="_Template - Footer"}
